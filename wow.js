@@ -26,20 +26,19 @@ right.addEventListener("click", () => {
     scrollbar.scrollLeft += scrollbar.clientWidth;
 })
 
-// setInterval(() => {
-//     if (scrollbar.scrollLeft <= 1360 && checkscroll == false) {
-//         scrollbar.scrollLeft += scrollbar.clientWidth;
-//         if (scrollbar.scrollLeft == 1360) {
-//             checkscroll = true;
-//         }
-//     }
-//     else {
-//         scrollbar.scrollLeft -= scrollbar.clientWidth;
-//         if (scrollbar.scrollLeft == 0) {
-//             checkscroll = false;
-//         }
-//     }
-// }, 5000);
+setInterval(() => {
+    if (scrollbar.scrollLeft <= scrollbar.scrollWidth - scrollbar.clientWidth && checkscroll == false) {
+        scrollbar.scrollLeft += scrollbar.clientWidth;
+        if (scrollbar.scrollLeft >= scrollbar.scrollWidth - scrollbar.clientWidth) {
+            checkscroll = true;
+        }
+    } else {
+        scrollbar.scrollLeft -= scrollbar.clientWidth;
+        if (scrollbar.scrollLeft <= 0) {
+            checkscroll = false;
+        }
+    }
+}, 4000);
 
 left2.addEventListener("click", () => {
     s_container.scrollLeft -= s_container.clientWidth/4;
@@ -81,4 +80,5 @@ menu_btn.addEventListener("click",()=>{
 
 close.addEventListener("click",()=>{
     navlist.style.left = "-115%";
+    navlist.style.position = "fixed";
 })
