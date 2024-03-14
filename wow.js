@@ -76,9 +76,10 @@ right5.addEventListener("click", () => {
 
 menu_btn.addEventListener("click",()=>{
     navlist.style.left = 0;
+    navlist.style.position = "fixed";
 })
 
 close.addEventListener("click",()=>{
     navlist.style.left = "-115%";
-    navlist.style.position = "fixed";
+    navlist.style.position = "absolute";
 })
