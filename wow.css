@@ -423,7 +423,6 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: red;
 }
 
 .section-3-conatiner {
@@ -442,7 +441,7 @@ body::-webkit-scrollbar {
 
 .section-3-conatiner-sub2 {
     height: 620px;
-    width: 620px;
+    width: 575px;
     padding: 0px 12px;
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -580,7 +579,7 @@ body::-webkit-scrollbar {
 .section-5{
     width: 1285px;
     height: 475px;
-    padding: 32px 48px;
+    padding: 32px 35px;
 }
 .section-5-contrainer{
     width: 1280px;
